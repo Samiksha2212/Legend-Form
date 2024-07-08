@@ -1,0 +1,86 @@
+body {
+    background: linear-gradient(90deg, #f0f2f5, #cfd9df); /* Subtle gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set a professional font */
+}
+
+.outer {
+    margin: auto;
+    height: 350px;
+    width: 400px;
+    border: 1px solid #ccc; /* Light grey border */
+    position: relative;
+    background: linear-gradient(135deg, #ffffff, #e6e9ef); /* Light gradient background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.outer:hover {
+    transform: scale(1.03); /* Slightly enlarge container on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Dark grey text color */
+    font-size: 24px; /* Increase font size */
+    margin-bottom: 20px;
+}
+
+p {
+    margin-left: 20px;
+    font-size: 14px; /* Set font size */
+    color: #555; /* Grey text color */
+}
+
+.in {
+    margin-left: 20px;
+    padding: 10px;
+    width: calc(100% - 40px); /* Adjust width to fit within parent */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition for border color and background color */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+}
+
+.in:hover {
+    background-color: rgba(255, 255, 255, 1); /* Full opacity background on hover */
+}
+
+.in:focus {
+    border-color: #007bff; /* Change border color on focus */
+    background-color: #fff; /* White background on focus */
+}
+
+#bt {
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#bt:hover {
+    background: #0056b3; /* Darker blue on hover */
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+#bt:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+    background: #003f7f; /* Even darker blue on click */
+}
